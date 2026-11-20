@@ -1,7 +1,5 @@
 """Shared settings for the Champion-Challenger mini project.
 
-Edit STUDENT_USN once. Everything else can stay as it is.
-"""
 STUDENT_USN = "1MS25CI104"
 
 TRACKING_URI = "http://127.0.0.1:5000"

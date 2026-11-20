@@ -273,7 +273,7 @@ def main():
         dis = both[both["pred_A"] != both["pred_B"]].copy()
         dis["who_was_right"] = np.where(dis["pred_A"] == dis["reference"], "A",
                                 np.where(dis["pred_B"] == dis["reference"], "B", "neither"))
-        dis["comment"] = ""   # fill in 5 short comments yourself
+        dis["comment"] = ""
         dis.to_csv("outputs/disagreements.csv", index=False)
         print(f"Models disagree on {len(dis)} of {len(both)} examples -> outputs/disagreements.csv")
 
